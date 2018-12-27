@@ -3,14 +3,21 @@
     <h1>{{titulo}}</h1>
     <span class="w3-tiny">SERVIÇOS AUTOMOTIVOS</span>
 </div>
-<div class="w3-container">
-    <div class="w3-container w3-indigo w3-display-left w3-margin w3-cell w3-cell-middle" style="width:45%;height:150px">
+<div class="w3-container w3-indigo w3-margin w3-center" style="width:92%;height:150px">
+    Imagem
+</div>
+<div class="w3-container w3-row">
+    <div class="w3-container w3-indigo w3-half w3-margin" style="width:40%;height:150px">
         <a href="http://www.zeta.com.br">Zeta</a>
     </div>
-    <div class="w3-container w3-amber w3-display-right w3-margin w3-cell w3-cell-middle" style="width:45%;height:150px">
+    <div class="w3-container w3-amber w3-half w3-margin" style="width:40%;height:150px">
         <a href="https://www.pepeoficina.com.br">PEPE</a>
     </div>
 </div>
+<!-- <div class="w3-container w3-indigo w3-margin w3-center" style="width:92%;height:120px">
+    Imagem
+</div> -->
+Mensagem: {{ message | async | json }}
 <footer class="w3-container w3-light-grey w3-display-bottommiddle" style="width:100%">
     <p>Produzido por Zeta Informática</p>
 </footer>

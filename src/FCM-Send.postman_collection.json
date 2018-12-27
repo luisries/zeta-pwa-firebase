@@ -1,0 +1,45 @@
+{
+	"info": {
+		"_postman_id": "50f46974-9b84-4e77-80e5-36442189e503",
+		"name": "FCM-Send",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "https://fcm.googleapis.com/fcm/send",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "key=AAAA982x7z8:APA91bGj7qy-uxEGUUAowHVDGJtgmoiVuEiziJ65LjiUV8ilxgopQy933Tk-l-igIDeYAmzYEGXx1hIghfTX06hPmjrl9HCbZEnzW3fby-p7QXh89P0qttY1c-FaKZ0cahTZPPXJU5c4",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"notification\": {\n        \"title\": \"Hello World\",\n        \"body\": \"O carro está pronto! Pode vir retirar!\"\n    },\n    \"to\": \"dqpdFRA-kT0:APA91bHOetD_7_W7cJLicQc3ozoXJuugMEGSt8axuts2zcisEUPRVSWQKh26_9SftbYWfnAj5zHs19eFoz6-bQnRqN0CzdpaAZ21CjG6Nmf-yiYWB7vEm-u1LkBYHPw9HteHtvPVw3bh\"\n}"
+				},
+				"url": {
+					"raw": "https://fcm.googleapis.com/fcm/send",
+					"protocol": "https",
+					"host": [
+						"fcm",
+						"googleapis",
+						"com"
+					],
+					"path": [
+						"fcm",
+						"send"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
